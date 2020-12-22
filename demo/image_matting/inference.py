@@ -103,10 +103,8 @@ if __name__ == '__main__':
         matte_name = im_name.split('.')[0] + '.png'
         mask = Image.fromarray(((matte * 255).astype('uint8')), mode='L')
         mask.save(os.path.join(args.output_path, matte_name))
-        #mask = mask.convert("RGBA")
         # image matting
         white_img = Image.fromarray((np.ones([origin_array.shape[0],origin_array.shape[1],3])* 255).astype('uint8'))
-        #enpty = Image.fromarray((np.ones([origin_array.shape[0],origin_array.shape[1],4])).astype('uint8'))
-        #origin_img = origin_img.convert("RGBA")
+
         composite = Image.composite(image1 = origin_img, image2=white_img, mask= mask)
         composite.save(os.path.join(args.portrait_path, matte_name))
