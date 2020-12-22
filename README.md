@@ -1,11 +1,11 @@
 # Image_matting
 ## First 
 
-Please put your data in demo/image_matting/input
+Please put your data in `demo/image_matting/input`
 
 ## Next
   
-Please download pretrained-model in prtrained
+Please download pretrained-model in `prtrained`
 
 
 ## Run
