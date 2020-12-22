@@ -1,4 +1,4 @@
-# image_matting
+# Image_matting
 ## First 
 
 Please put your data in demo/image_matting/input
